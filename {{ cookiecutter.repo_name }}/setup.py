@@ -17,7 +17,6 @@ def parse_requirements():
 
 setup(
     name='{{ "conny-ml-" + cookiecutter.package_name.replace(" ", "-").replace("_", "-") }}',
-    package_dir={'':'src'},
     packages=find_namespace_packages(include=['conny_ml.*']),
     version='0.1.0',
     description='{{ cookiecutter.description }}',
